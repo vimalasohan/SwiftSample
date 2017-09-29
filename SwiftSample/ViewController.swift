@@ -19,7 +19,6 @@ class ViewController: UITableViewController {
         tableViewSample.register(UINib(nibName:"ReusableCell", bundle:bundle), forCellReuseIdentifier: "ReusableCell")
         tableViewSample.estimatedRowHeight = 44.0
         tableViewSample.rowHeight = UITableViewAutomaticDimension
-        //self.tableViewSample.register(ReusableCell.self, forCellReuseIdentifier: "ReusableCell")
     }
     
     override func didReceiveMemoryWarning() {
