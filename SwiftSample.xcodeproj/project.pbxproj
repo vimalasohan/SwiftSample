@@ -15,6 +15,8 @@
 		D41CFEA41F7DBF28002ABC75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41CFEA21F7DBF28002ABC75 /* LaunchScreen.storyboard */; };
 		D41CFEAF1F7DBF28002ABC75 /* SwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CFEAE1F7DBF28002ABC75 /* SwiftSampleTests.swift */; };
 		D41CFEBA1F7DBF28002ABC75 /* SwiftSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CFEB91F7DBF28002ABC75 /* SwiftSampleUITests.swift */; };
+		D41CFEF11F7E623F002ABC75 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41CFEF21F7E623F002ABC75 /* UIComponents.framework */; };
+		D41CFEF51F7E6E48002ABC75 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D41CFEF21F7E623F002ABC75 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D41CFEF31F7E625C002ABC75 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				D41CFEF51F7E6E48002ABC75 /* UIComponents.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D41CFE931F7DBF28002ABC75 /* SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41CFE961F7DBF28002ABC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		D41CFEB51F7DBF28002ABC75 /* SwiftSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41CFEB91F7DBF28002ABC75 /* SwiftSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSampleUITests.swift; sourceTree = "<group>"; };
 		D41CFEBB1F7DBF28002ABC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41CFEF21F7E623F002ABC75 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41CFEF11F7E623F002ABC75 /* UIComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,7 @@
 				D41CFEAD1F7DBF28002ABC75 /* SwiftSampleTests */,
 				D41CFEB81F7DBF28002ABC75 /* SwiftSampleUITests */,
 				D41CFE941F7DBF28002ABC75 /* Products */,
+				D41CFEF01F7E623F002ABC75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +147,14 @@
 			path = SwiftSampleUITests;
 			sourceTree = "<group>";
 		};
+		D41CFEF01F7E623F002ABC75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D41CFEF21F7E623F002ABC75 /* UIComponents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +165,7 @@
 				D41CFE8F1F7DBF28002ABC75 /* Sources */,
 				D41CFE901F7DBF28002ABC75 /* Frameworks */,
 				D41CFE911F7DBF28002ABC75 /* Resources */,
+				D41CFEF31F7E625C002ABC75 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
