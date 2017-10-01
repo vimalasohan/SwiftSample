@@ -17,6 +17,9 @@
 		D41CFEBA1F7DBF28002ABC75 /* SwiftSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CFEB91F7DBF28002ABC75 /* SwiftSampleUITests.swift */; };
 		D41CFEF11F7E623F002ABC75 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41CFEF21F7E623F002ABC75 /* UIComponents.framework */; };
 		D41CFEF51F7E6E48002ABC75 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D41CFEF21F7E623F002ABC75 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D41CFF1E1F7FE9C0002ABC75 /* NetworkComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41CFF1F1F7FE9C0002ABC75 /* NetworkComponents.framework */; };
+		D41CFF201F7FE9C6002ABC75 /* NetworkComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D41CFF1F1F7FE9C0002ABC75 /* NetworkComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D41CFF221F801AC3002ABC75 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CFF211F801AC3002ABC75 /* CountryDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				D41CFF201F7FE9C6002ABC75 /* NetworkComponents.framework in Embed Frameworks */,
 				D41CFEF51F7E6E48002ABC75 /* UIComponents.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -66,6 +70,8 @@
 		D41CFEB91F7DBF28002ABC75 /* SwiftSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSampleUITests.swift; sourceTree = "<group>"; };
 		D41CFEBB1F7DBF28002ABC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D41CFEF21F7E623F002ABC75 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41CFF1F1F7FE9C0002ABC75 /* NetworkComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41CFF211F801AC3002ABC75 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41CFF1E1F7FE9C0002ABC75 /* NetworkComponents.framework in Frameworks */,
 				D41CFEF11F7E623F002ABC75 /* UIComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +132,7 @@
 				D41CFEA21F7DBF28002ABC75 /* LaunchScreen.storyboard */,
 				D41CFEA51F7DBF28002ABC75 /* Info.plist */,
 				D41CFE9D1F7DBF28002ABC75 /* SwiftSample.xcdatamodeld */,
+				D41CFF211F801AC3002ABC75 /* CountryDetails.swift */,
 			);
 			path = SwiftSample;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 		D41CFEF01F7E623F002ABC75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D41CFF1F1F7FE9C0002ABC75 /* NetworkComponents.framework */,
 				D41CFEF21F7E623F002ABC75 /* UIComponents.framework */,
 			);
 			name = Frameworks;
@@ -291,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41CFE991F7DBF28002ABC75 /* ViewController.swift in Sources */,
+				D41CFF221F801AC3002ABC75 /* CountryDetails.swift in Sources */,
 				D41CFE9F1F7DBF28002ABC75 /* SwiftSample.xcdatamodeld in Sources */,
 				D41CFE971F7DBF28002ABC75 /* AppDelegate.swift in Sources */,
 			);
